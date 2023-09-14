@@ -1,0 +1,97 @@
+.ai-image-generator{
+    display:flex;
+    margin:auto;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0 20px 0;
+    gap:30px;
+}
+
+
+.header{
+    font-size: 70px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+.header span{
+    color:deeppink;
+    font-weight: 600;
+}
+.img-loading {
+    display: flex;
+    flex-direction: column;
+} 
+.img-loading img{
+    max-width :512px;
+    max-height: 512px;
+    /* height : 400px; */
+}
+.loading-bar{
+    width: 0px;
+    height: 8px;
+    background: deeppink;
+}
+.loading-text{
+    font-size: 18px;
+}
+.loading-bar-full{
+    width: 512px;
+    height: 8px;
+    background: deeppink;
+    transition: 15s;
+}
+.display-none{
+    display: none;
+}
+.search-box{
+    display: flex;
+    width: 930px;
+    height: 75px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    background: #1f3540;
+}
+.search-input{
+    width: 600px;
+    height:50px;
+    background: transparent;
+    border:none;
+    outline:none;
+    font-size: 18px;
+    color: aliceblue;
+    padding-left: 35px;
+    margin-right: 35px;
+}
+.search-input::placeholder{
+    color: #999;
+}
+
+.generate-btn, .download-btn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:230px;
+    height: 65px;
+    font-size: 20px;
+    border-radius: 50px;
+    
+        background-color: deeppink;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+button {
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: white; 
+  border:solid black;
+  color:black;
+}
+.download-btn{
+    margin: 0 5px;
+}
+
